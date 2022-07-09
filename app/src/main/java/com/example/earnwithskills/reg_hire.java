@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.earnwithskills.Models.Hirer;
 import com.example.earnwithskills.databinding.ActivityRegHireBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,8 +25,8 @@ public class reg_hire extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivityRegHireBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
+        //setContentView(binding.getRoot());
+        setContentView(R.layout.activity_reg_hire);
         auth=FirebaseAuth.getInstance();
         database=FirebaseDatabase.getInstance();
 
@@ -33,33 +35,36 @@ public class reg_hire extends AppCompatActivity {
 
     public void register(View view) {
 
-        binding=ActivityRegHireBinding.inflate(getLayoutInflater());
-        if(binding.txtOrgname.getText().toString().compareTo("")==0||binding.txtMail.getText().toString().compareTo("")==0||binding.txtPassword.getText().toString().compareTo("")==0)
+        EditText orgname = (EditText) findViewById(R.id.txt_orgname);
+        EditText mail = (EditText) findViewById(R.id.txt_mail);
+        EditText password = (EditText) findViewById(R.id.txt_password);
+        if(orgname.getText().toString().compareTo("")==0||mail.getText().toString().compareTo("")==0||password.getText().toString().compareTo("")==0)
         {
-            Toast.makeText(reg_hire.this,"Invalid credentials",Toast.LENGTH_SHORT).show();
+            Toast.makeText(reg_hire.this,"Cannot have empty fields",Toast.LENGTH_SHORT).show();
+            //System.out.println("Hello"+binding.txtOrgname.getText().toString()+binding.txtMail.getText().toString()+binding.txtPassword.getText().toString());
             return;
         }
-        auth.createUserWithEmailAndPassword(binding.txtMail.getText().toString(),binding.txtPassword.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>()
+        auth.createUserWithEmailAndPassword(mail.getText().toString(),password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>()
         {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task)
             {
                 if(task.isSuccessful())
                 {
-                    Users user=new Users(binding.nameTxt.getText().toString(),binding.emailTxt.getText().toString(),binding.passwordTxt.getText().toString(),binding.phoneTxt.getText().toString(),binding.cityTxt.getText().toString());
+                    Hirer hr=new Hirer(orgname.getText().toString(),mail.getText().toString(),password.getText().toString());
                     String id=task.getResult().getUser().getUid();
-                    database.getReference().child("Users").child(id).setValue(user);
+                    database.getReference().child("Hirer").child(id).setValue(hr);
 
                     FirebaseAuth.getInstance().getCurrentUser().sendEmailVerification();
 
-                    Toast.makeText(Registration.this,"Registration successful. Please check your mail for verification link.",Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(Registration.this,Login.class);
+                    Toast.makeText(reg_hire.this,"Registration successful. Please check your mail for verification link.",Toast.LENGTH_LONG).show();
+                    Intent intent=new Intent(reg_hire.this,login.class);
                     startActivity(intent);
                     finish();
                 }
                 else
                 {
-                    Toast.makeText(Registration.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(reg_hire.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                 }
             }
         });

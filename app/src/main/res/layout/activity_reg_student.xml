@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/txt_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="41dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
@@ -24,8 +24,8 @@
 
     <EditText
         android:id="@+id/txt_college"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="44dp"
         android:ems="10"
         android:hint="College"
         android:inputType="textPersonName"
@@ -39,8 +39,8 @@
 
     <EditText
         android:id="@+id/txt_degree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="302dp"
+        android:layout_height="41dp"
         android:ems="10"
         android:hint="Degree"
         android:inputType="textPersonName"
@@ -66,8 +66,8 @@
 
     <EditText
         android:id="@+id/txt_year"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:hint="Year of Graduation"
         android:inputType="date"
@@ -77,13 +77,13 @@
 
     <EditText
         android:id="@+id/txt_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="424dp" />
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="414dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -100,12 +100,12 @@
 
     <EditText
         android:id="@+id/txt_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="38dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Password"
-        tools:layout_editor_absoluteX="103dp"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="484dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

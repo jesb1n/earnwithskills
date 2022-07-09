@@ -74,4 +74,10 @@ public class stud_det extends AppCompatActivity {
         Intent i=new Intent(stud_det.this,add_skill.class);
         startActivity(i);
     }
+
+    public void logout(View view) {
+        auth.signOut();
+        Intent i=new Intent(stud_det.this,login_type.class);
+        startActivity(i);
+    }
 }

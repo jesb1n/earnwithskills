@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/earnwithskills/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
-        <entry key="..\:/earnwithskills/app/src/main/res/layout/activity_login_type.xml" value="0.1" />
-        <entry key="..\:/earnwithskills/app/src/main/res/layout/activity_reg_hire.xml" value="0.22447916666666667" />
-        <entry key="..\:/earnwithskills/app/src/main/res/layout/activity_reg_student.xml" value="0.33" />
-        <entry key="..\:/earnwithskills/app/src/main/res/layout/activity_stud_det.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add_skill.xml" value="0.29777170817057297" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/activity_login_hire.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login_type.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/activity_reg_hire.xml" value="0.25636596679687507" />
+        <entry key="app/src/main/res/layout/activity_reg_student.xml" value="0.32184092203776044" />
+        <entry key="app/src/main/res/layout/activity_stud_det.xml" value="0.36635589599609375" />
+        <entry key="app/src/main/res/layout/activity_stud_works.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/job_list.xml" value="0.23782771535580524" />
       </map>
     </option>
   </component>

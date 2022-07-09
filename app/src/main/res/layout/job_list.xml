@@ -32,17 +32,20 @@
                     android:id="@+id/txt_job"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:layout_margin="10dp"
+                    android:ems="10"
                     android:inputType="textPersonName"
+                    android:minHeight="48dp"
                     android:text="Name" />
 
                 <EditText
+                    android:id="@+id/txt_skill"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:layout_margin="10dp"
+                    android:ems="10"
                     android:inputType="textPersonName"
+                    android:minHeight="48dp"
                     android:text="Name" />
             </LinearLayout>
         </LinearLayout>

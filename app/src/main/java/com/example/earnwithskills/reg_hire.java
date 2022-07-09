@@ -59,8 +59,9 @@ public class reg_hire extends AppCompatActivity {
 
                     Toast.makeText(reg_hire.this,"Registration successful. Please check your mail for verification link.",Toast.LENGTH_LONG).show();
                     Intent intent=new Intent(reg_hire.this,login.class);
+                    intent.putExtra("key","hirer");
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }
                 else
                 {

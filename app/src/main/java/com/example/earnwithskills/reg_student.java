@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.earnwithskills.Models.Hirer;
 import com.example.earnwithskills.Models.Student;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -30,7 +29,7 @@ public class reg_student extends AppCompatActivity {
 
 
     public void register(View view) {
-        EditText name = (EditText) findViewById(R.id.txt_name);
+        EditText name = (EditText) findViewById(R.id.txt_mail);
         EditText college = (EditText) findViewById(R.id.txt_college);
         EditText degree = (EditText) findViewById(R.id.txt_degree);
         EditText year = (EditText) findViewById(R.id.txt_year);

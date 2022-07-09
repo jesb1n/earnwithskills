@@ -14,11 +14,14 @@
         android:theme="@style/Theme.Earnwithskills"
         tools:targetApi="31">
         <activity
-            android:name=".login_hire"
+            android:name=".stud_det"
             android:exported="false" />
         <activity
             android:name=".login"
             android:exported="true"></activity>
+        <activity
+            android:name=".reg_student"
+            android:exported="false" />
         <activity
             android:name=".reg_hire"
             android:exported="false" />

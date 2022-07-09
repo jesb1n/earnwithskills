@@ -25,7 +25,7 @@ public class Student {
         this.skills=new ArrayList<String>();
         skills.add("empty");
         this.works=new ArrayList<String>();
-        skills.add("empty");
+        works.add("empty");
     }
 
     public ArrayList<String> getSkills() {
@@ -46,6 +46,9 @@ public class Student {
 
     public String getDegree() {
         return degree;
+    }
+
+    public Student() {
     }
 
     public String getYear() {

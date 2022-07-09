@@ -9,4 +9,19 @@ public class job_data {
         this.job_skill = job_skill;
     }
 
+    public String getJob_name() {
+        return job_name;
+    }
+
+    public void setJob_name(String job_name) {
+        this.job_name = job_name;
+    }
+
+    public String getJob_skill() {
+        return job_skill;
+    }
+
+    public void setJob_skill(String job_skill) {
+        this.job_skill = job_skill;
+    }
 }

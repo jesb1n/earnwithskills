@@ -13,6 +13,7 @@
         android:layout_marginTop="148dp"
         android:layout_marginEnd="320dp"
         android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:layout_marginTop="188dp"
         android:layout_marginEnd="320dp"
         android:text="College"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
         android:text="Qualification"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
         android:text="Year Of Passing"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,8 +92,8 @@
         android:hint="Name"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        tools:layout_editor_absoluteX="172dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -99,8 +103,8 @@
         android:hint="College"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="172dp" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -109,8 +113,8 @@
         android:ems="10"
         android:hint="Date"
         android:inputType="date"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="220dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        tools:layout_editor_absoluteX="172dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -153,7 +157,6 @@
         android:layout_width="337dp"
         android:layout_height="167dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.905"
@@ -172,15 +175,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="171dp"
-        android:layout_marginTop="22dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginBottom="99dp"
         android:text="ADD SKILL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.255" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

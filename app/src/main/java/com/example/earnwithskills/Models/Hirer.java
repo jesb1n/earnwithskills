@@ -9,6 +9,9 @@ public class Hirer {
         this.password = password;
     }
 
+    public Hirer() {
+    }
+
     public String getOrg_name() {
         return org_name;
     }

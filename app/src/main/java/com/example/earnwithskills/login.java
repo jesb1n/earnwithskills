@@ -34,6 +34,12 @@ public class login extends AppCompatActivity {
             Intent i = new Intent(login.this, reg_hire.class);
             startActivity(i);
         }
+        else
+        {
+            Intent i = new Intent(login.this, reg_student.class);
+            startActivity(i);
+        }
+
 
 
     }

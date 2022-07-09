@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197275463982",
+    "project_id": "earnwithskills-465b3",
+    "storage_bucket": "earnwithskills-465b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197275463982:android:00246621cc2ea7e2ab0abf",
+        "android_client_info": {
+          "package_name": "com.example.earnwithskills"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197275463982-lcmdb7crt88591jldc29olojb2ft5upt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZyo87hjqmhfgkReY4MPyDChyr5ln8q14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197275463982-lcmdb7crt88591jldc29olojb2ft5upt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

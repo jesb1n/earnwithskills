@@ -10,24 +10,27 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="366dp"
         android:layout_height="55dp"
+        android:layout_marginTop="200dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="215dp"
-        android:hint="Email"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="366dp"
         android:layout_height="55dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="310dp"
-        android:hint="Password"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <Button
         android:id="@+id/button"

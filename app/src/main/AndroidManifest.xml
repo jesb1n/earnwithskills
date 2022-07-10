@@ -49,6 +49,9 @@
         <activity
             android:name=".stud_works"
             android:exported="false" />
+        <activity
+            android:name=".add_skill"
+            android:exported="false" />
     </application>
 
 </manifest>

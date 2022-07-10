@@ -3,21 +3,47 @@ package com.example.earnwithskills.Models;
 import java.util.ArrayList;
 
 public class Work {
-    String topic, duration, skill, org;
+    String id, topic, skill, org, amount;
     ArrayList<String> requests;
 
-    public Work(String topic, String duration, String skill, String org) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Work(String id, String topic, String skill, String org, String amount) {
+        this.id=id;
         this.topic = topic;
-        this.duration = duration;
         this.skill = skill;
         this.org = org;
+        this.amount = amount;
         this.requests=new ArrayList<String>();
         requests.add("empty");
     }
 
 
 
+
     public Work() {
+    }
+
+    public String getOrg() {
+        return org;
+    }
+
+    public void setOrg(String org) {
+        this.org = org;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public String getTopic() {
@@ -26,14 +52,6 @@ public class Work {
 
     public void setTopic(String topic) {
         this.topic = topic;
-    }
-
-    public String getDuration() {
-        return duration;
-    }
-
-    public void setDuration(String duration) {
-        this.duration = duration;
     }
 
     public String getSkill() {

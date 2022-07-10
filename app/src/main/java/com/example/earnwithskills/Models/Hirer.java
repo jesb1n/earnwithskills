@@ -1,7 +1,10 @@
 package com.example.earnwithskills.Models;
 
+import java.util.ArrayList;
+
 public class Hirer {
     String org_name,email,password;
+
 
     public Hirer(String org_name, String email, String password) {
         this.org_name = org_name;

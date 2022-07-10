@@ -54,6 +54,7 @@ public class login_hire extends AppCompatActivity {
 //        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         name=binding.txtOrg;
+
         mail=binding.txtEmail;
 
 

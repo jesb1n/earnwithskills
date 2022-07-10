@@ -5,3 +5,13 @@ Our project aims to provide opportunities for students who want to earn money wh
 
 
 
+
+## Installation
+
+This project was created using Android Studio, Firebase
+
+```bash
+  Databse: Firebase
+  Android Studio Chipmunk | 2021.2.1 : Java
+```
+    

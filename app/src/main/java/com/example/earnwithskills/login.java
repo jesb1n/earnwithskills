@@ -60,7 +60,9 @@ public class login extends AppCompatActivity {
                                 }
                                 else
                                 {
+                                    Intent intent = new Intent(login.this, login_hire.class);
 
+                                    startActivity(intent);
                                 }
                             }
                             else

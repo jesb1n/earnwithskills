@@ -102,11 +102,11 @@ public class login_hire extends AppCompatActivity {
         cardClickListener=new WorkAdapter.CardClickListener() {
             @Override
             public void onClick(View view,int position) {
-                Intent intent=new Intent(login_hire.this,work_disp.class);
-                //intent.addFlags(intent.FLAG_ACTIVITY_NO_ANIMATION);
-                //intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                intent.putExtra("cur", (Serializable) workList.get(position));
-                startActivity(intent);
+//                Intent intent=new Intent(login_hire.this,work_disp.class);
+//                //intent.addFlags(intent.FLAG_ACTIVITY_NO_ANIMATION);
+//                //intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+//                intent.putExtra("cur", (Serializable) workList.get(position));
+//                startActivity(intent);
                 //overridePendingTransition(0,0);
             }
         };

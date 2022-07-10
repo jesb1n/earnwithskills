@@ -36,8 +36,22 @@ public class add_skill extends AppCompatActivity {
         auth=FirebaseAuth.getInstance();
         database=FirebaseDatabase.getInstance();
 
-        //skill=binding.txtSkill;
+        uid=auth.getCurrentUser().getUid();
 
+        database.getReference().child("Student").child(uid).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Student st=snapshot.getValue(Student.class);
+                ArrayList<String> sk = st.getSkills();
+                sk.remove("empty");
+                binding.txt.setText(sk.toString());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
         
 
 

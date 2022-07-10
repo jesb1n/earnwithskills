@@ -46,6 +46,9 @@
         <activity
             android:name=".login_hire"
             android:exported="false" />
+        <activity
+            android:name=".stud_works"
+            android:exported="false" />
     </application>
 
 </manifest>

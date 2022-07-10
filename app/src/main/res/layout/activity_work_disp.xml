@@ -6,4 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".work_disp">
 
+    <TextView
+        android:id="@+id/txt_org"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_job"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_org" />
+
+
+
+
+    <TextView
+        android:id="@+id/txt_skill"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_job" />
+
+    <TextView
+        android:id="@+id/txt_amount"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_skill" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:text="Apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_amount" />
 </androidx.constraintlayout.widget.ConstraintLayout>

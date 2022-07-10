@@ -79,14 +79,14 @@ public class login extends AppCompatActivity {
             }
         });
 
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null&&FirebaseAuth.getInstance().getCurrentUser().isEmailVerified())
-        {
-            if(type.compareTo("student")==0) {
-                Intent intent = new Intent(login.this, stud_det.class);
-                startActivity(intent);
-                //finish();
-            }
-        }
+//        if(FirebaseAuth.getInstance().getCurrentUser()!=null&&FirebaseAuth.getInstance().getCurrentUser().isEmailVerified())
+//        {
+//            if(type.compareTo("student")==0) {
+//                Intent intent = new Intent(login.this, stud_det.class);
+//                startActivity(intent);
+//                //finish();
+//            }
+//        }
     }
 
     public void ulogin(View view) {

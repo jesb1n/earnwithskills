@@ -80,4 +80,9 @@ public class stud_det extends AppCompatActivity {
         Intent i=new Intent(stud_det.this,login_type.class);
         startActivity(i);
     }
+
+    public void viewWorks(View view) {
+        Intent i=new Intent(stud_det.this,stud_works.class);
+        startActivity(i);
+    }
 }

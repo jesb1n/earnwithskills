@@ -106,7 +106,8 @@
         android:text="View works"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_mail" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_mail"
+        android:onClick="viewWorks"/>
 
     <Button
         android:id="@+id/btn_logout"

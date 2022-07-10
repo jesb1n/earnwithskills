@@ -2,7 +2,10 @@ package com.example.earnwithskills.Models;
 
 import java.util.ArrayList;
 
-public class Work {
+import java.io.Serializable;
+
+public class Work implements Serializable
+{
     String id, topic, skill, org, amount;
     ArrayList<String> requests;
 
